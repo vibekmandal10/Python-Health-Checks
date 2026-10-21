@@ -1,0 +1,93 @@
+2026-10-18 06:47:37,175 - INFO - ========== Health Check Started ==========
+2026-10-18 06:47:38,285 - INFO - Application health check successful
+2026-10-18 06:47:38,286 - INFO - Health check completed: HEALTHY
+2026-10-18 07:01:56,115 - INFO - ========== Health Check Started ==========
+2026-10-18 07:01:56,360 - INFO - Application health check successful
+2026-10-18 07:01:56,361 - INFO - Health check completed: HEALTHY
+====================================
+Sun Oct 18 07:02:33 UTC 2026 - Health check started
+2026-10-18 07:02:33,670 - INFO - ========== Health Check Started ==========
+2026-10-18 07:02:33,879 - ERROR - Failed to parse CPU usage
+Traceback (most recent call last):
+  File "/mnt/c/Projects/Health_Checks/health_check.py", line 72, in get_cpu_usage
+    idle = float(
+           ^^^^^^
+ValueError: could not convert string to float: 'ni,100.0'
+2026-10-18 07:02:33,897 - INFO - Application health check successful
+2026-10-18 07:02:33,899 - INFO - Health check completed: HEALTHY
+Sun Oct 18 07:02:33 UTC 2026 - Health check completed successfully
+====================================
+Sun Oct 18 07:04:14 UTC 2026 - Health check started
+2026-10-18 07:04:14,510 - INFO - ========== Health Check Started ==========
+2026-10-18 07:04:14,736 - INFO - Application health check successful
+2026-10-18 07:04:14,737 - INFO - Health check completed: HEALTHY
+Sun Oct 18 07:04:14 UTC 2026 - Health check completed successfully
+====================================
+Sun Oct 18 07:10:07 UTC 2026 - Health check started
+2026-10-18 07:10:08,033 - INFO - ========== Health Check Started ==========
+2026-10-18 07:10:08,257 - INFO - Application health check successful
+2026-10-18 07:10:08,261 - INFO - Health check completed: HEALTHY
+Sun Oct 18 07:10:08 UTC 2026 - Health check completed successfully
+====================================
+Sun Oct 18 07:11:33 UTC 2026 - Health check started
+2026-10-18 07:11:34,064 - INFO - ========== Health Check Started ==========
+2026-10-18 07:11:34,285 - INFO - Application health check successful
+2026-10-18 07:11:34,289 - INFO - Health check completed: CRITICAL
+2026-10-18 07:11:34,290 - ERROR - Health check detected problems: ['High CPU usage: 4.8%', 'High memory usage: 25.68%', 'High disk usage: 1.27%']
+Sun Oct 18 07:11:34 UTC 2026 - WARNING: Health check found issues
+====================================
+Sun Oct 18 07:17:33 UTC 2026 - Health check started
+2026-10-18 07:17:33,254 - INFO - ========== Health Check Started ==========
+2026-10-18 07:17:33,464 - ERROR - Failed to parse CPU usage
+Traceback (most recent call last):
+  File "/mnt/c/Projects/Health_Checks/health_check.py", line 77, in get_cpu_usage
+    idle = float(
+           ^^^^^^
+ValueError: could not convert string to float: 'ni,100.0'
+2026-10-18 07:17:33,480 - INFO - Application health check successful
+2026-10-18 07:17:34,220 - INFO - Health check completed: CRITICAL
+2026-10-18 07:17:34,221 - ERROR - Health check detected problems: ['High memory usage: 25.7%', 'High disk usage: 1.27%', 'Docker container docker-elk_kibana_1 health is NOT CONFIGURED', 'Docker container docker-elk_logstash_1 health is NOT CONFIGURED', 'Docker container docker-elk_elasticsearch_1 health is NOT CONFIGURED']
+Sun Oct 18 07:17:34 UTC 2026 - WARNING: Health check found issues
+2026-10-18 11:36:34,708 - INFO - ========== Health Check Started ==========
+2026-10-18 11:36:34,951 - INFO - Application health check successful
+2026-10-18 11:36:35,113 - INFO - Health check completed: CRITICAL
+2026-10-18 11:36:35,113 - ERROR - Health check detected problems: ['High CPU usage: 2.4%', 'High memory usage: 26.07%', 'High disk usage: 1.27%', 'Docker container docker-elk_kibana_1 health is NOT CONFIGURED', 'Docker container docker-elk_logstash_1 health is NOT CONFIGURED', 'Docker container docker-elk_elasticsearch_1 health is NOT CONFIGURED']
+2026-10-18 11:36:40,229 - INFO - ========== Health Check Started ==========
+2026-10-18 11:36:40,449 - INFO - Application health check successful
+2026-10-18 11:36:40,562 - INFO - Health check completed: CRITICAL
+2026-10-18 11:36:40,562 - ERROR - Health check detected problems: ['High CPU usage: 1.2%', 'High memory usage: 26.07%', 'High disk usage: 1.27%', 'Docker container docker-elk_kibana_1 health is NOT CONFIGURED', 'Docker container docker-elk_logstash_1 health is NOT CONFIGURED', 'Docker container docker-elk_elasticsearch_1 health is NOT CONFIGURED']
+2026-10-18 11:36:41,884 - INFO - ========== Health Check Started ==========
+2026-10-18 11:36:42,104 - INFO - Application health check successful
+2026-10-18 11:36:42,221 - INFO - Health check completed: CRITICAL
+2026-10-18 11:36:42,221 - ERROR - Health check detected problems: ['High CPU usage: 2.4%', 'High memory usage: 26.31%', 'High disk usage: 1.27%', 'Docker container docker-elk_kibana_1 health is NOT CONFIGURED', 'Docker container docker-elk_logstash_1 health is NOT CONFIGURED', 'Docker container docker-elk_elasticsearch_1 health is NOT CONFIGURED']
+2026-10-18 11:36:43,093 - INFO - ========== Health Check Started ==========
+2026-10-18 11:36:43,320 - INFO - Application health check successful
+2026-10-18 11:36:43,428 - INFO - Health check completed: CRITICAL
+2026-10-18 11:36:43,429 - ERROR - Health check detected problems: ['High CPU usage: 1.2%', 'High memory usage: 26.39%', 'High disk usage: 1.27%', 'Docker container docker-elk_kibana_1 health is NOT CONFIGURED', 'Docker container docker-elk_logstash_1 health is NOT CONFIGURED', 'Docker container docker-elk_elasticsearch_1 health is NOT CONFIGURED']
+====================================
+Sun Oct 18 11:36:46 UTC 2026 - Health check started
+2026-10-18 11:36:46,903 - INFO - ========== Health Check Started ==========
+2026-10-18 11:36:47,127 - INFO - Application health check successful
+2026-10-18 11:36:47,233 - INFO - Health check completed: CRITICAL
+2026-10-18 11:36:47,234 - ERROR - Health check detected problems: ['High CPU usage: 2.4%', 'High memory usage: 26.38%', 'High disk usage: 1.27%', 'Docker container docker-elk_kibana_1 health is NOT CONFIGURED', 'Docker container docker-elk_logstash_1 health is NOT CONFIGURED', 'Docker container docker-elk_elasticsearch_1 health is NOT CONFIGURED']
+Sun Oct 18 11:36:47 UTC 2026 - WARNING: Health check found issues
+====================================
+Sun Oct 18 11:36:50 UTC 2026 - Health check started
+2026-10-18 11:36:51,038 - INFO - ========== Health Check Started ==========
+2026-10-18 11:36:51,259 - INFO - Application health check successful
+2026-10-18 11:36:51,366 - INFO - Health check completed: CRITICAL
+2026-10-18 11:36:51,367 - ERROR - Health check detected problems: ['High CPU usage: 1.2%', 'High memory usage: 26.32%', 'High disk usage: 1.27%', 'Docker container docker-elk_kibana_1 health is NOT CONFIGURED', 'Docker container docker-elk_logstash_1 health is NOT CONFIGURED', 'Docker container docker-elk_elasticsearch_1 health is NOT CONFIGURED']
+Sun Oct 18 11:36:51 UTC 2026 - WARNING: Health check found issues
+====================================
+Sun Oct 18 11:43:11 UTC 2026 - Health check started
+2026-10-18 11:43:11,711 - INFO - ========== Health Check Started ==========
+2026-10-18 11:43:11,927 - ERROR - Failed to parse CPU usage
+Traceback (most recent call last):
+  File "/mnt/c/Projects/Health_Checks/health_check.py", line 77, in get_cpu_usage
+    idle = float(
+           ^^^^^^
+ValueError: could not convert string to float: 'ni,100.0'
+2026-10-18 11:43:11,947 - INFO - Application health check successful
+2026-10-18 11:43:12,101 - INFO - Health check completed: CRITICAL
+2026-10-18 11:43:12,101 - ERROR - Health check detected problems: ['High memory usage: 26.07%', 'High disk usage: 1.27%', 'Docker container docker-elk_kibana_1 health is NOT CONFIGURED', 'Docker container docker-elk_logstash_1 health is NOT CONFIGURED', 'Docker container docker-elk_elasticsearch_1 health is NOT CONFIGURED']
+Sun Oct 18 11:43:12 UTC 2026 - WARNING: Health check found issues

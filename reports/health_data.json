@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-10-18 11:43:12",
+  "cpu": null,
+  "memory": 26.07,
+  "disk": 1.27,
+  "load": {
+    "1_min": 0.02,
+    "5_min": 0.06,
+    "15_min": 0.08
+  },
+  "application": {
+    "status": "UP",
+    "http_code": 200
+  },
+  "services": {
+    "nginx": {
+      "status": "UP",
+      "state": "active"
+    },
+    "jenkins": {
+      "status": "UP",
+      "state": "active"
+    },
+    "docker": {
+      "status": "UP",
+      "state": "active"
+    }
+  },
+  "docker": {
+    "available": true,
+    "containers": [
+      {
+        "id": "1816c1d85e9f",
+        "name": "docker-elk_kibana_1",
+        "image": "docker-elk_kibana",
+        "status": "RUNNING",
+        "health": "NOT CONFIGURED"
+      },
+      {
+        "id": "5ae3a203344a",
+        "name": "docker-elk_logstash_1",
+        "image": "docker-elk_logstash",
+        "status": "RUNNING",
+        "health": "NOT CONFIGURED"
+      },
+      {
+        "id": "b6854ea6428e",
+        "name": "docker-elk_elasticsearch_1",
+        "image": "docker-elk_elasticsearch",
+        "status": "RUNNING",
+        "health": "NOT CONFIGURED"
+      }
+    ]
+  },
+  "url_checks": {
+    "Jenkins": {
+      "name": "Jenkins",
+      "url": "http://localhost:8080/login",
+      "status": "UP",
+      "http_code": 200
+    },
+    "Nginx": {
+      "name": "Nginx",
+      "url": "http://localhost/",
+      "status": "UP",
+      "http_code": 200
+    }
+  },
+  "status": "CRITICAL",
+  "problems": [
+    "High memory usage: 26.07%",
+    "High disk usage: 1.27%",
+    "Docker container docker-elk_kibana_1 health is NOT CONFIGURED",
+    "Docker container docker-elk_logstash_1 health is NOT CONFIGURED",
+    "Docker container docker-elk_elasticsearch_1 health is NOT CONFIGURED"
+  ]
+}

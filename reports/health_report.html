@@ -1,0 +1,114 @@
+
+<html>
+
+<head>
+
+<title>System Health Report</title>
+
+<style>
+
+body {
+    font-family: Arial;
+    margin: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    background-color: #eee;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>System Health Report</h1>
+
+<p>
+Generated: 2026-10-18 11:43:12
+</p>
+
+<h2>Overall Status: CRITICAL</h2>
+
+<table>
+
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+
+<tr>
+<td>CPU Usage</td>
+<td>Unavailable%</td>
+</tr>
+
+<tr>
+<td>Memory Usage</td>
+<td>26.07%</td>
+</tr>
+
+<tr>
+<td>Disk Usage</td>
+<td>1.27%</td>
+</tr>
+
+<tr>
+<td>Load Average - 1 min</td>
+<td>0.02</td>
+</tr>
+
+<tr>
+<td>Load Average - 5 min</td>
+<td>0.06</td>
+</tr>
+
+<tr>
+<td>Load Average - 15 min</td>
+<td>0.08</td>
+</tr>
+
+</table>
+
+<h2>Services</h2>
+
+<table>
+<tr><th>Service</th><th>Status</th><th>State</th></tr>
+<tr><td>nginx</td><td>UP</td><td>active</td></tr><tr><td>jenkins</td><td>UP</td><td>active</td></tr><tr><td>docker</td><td>UP</td><td>active</td></tr>
+</table>
+
+<h2>Docker Containers</h2>
+
+<table>
+<tr><th>Container</th><th>Image</th><th>Status</th><th>Health</th></tr>
+<tr><td>docker-elk_kibana_1</td><td>docker-elk_kibana</td><td>RUNNING</td><td>NOT CONFIGURED</td></tr><tr><td>docker-elk_logstash_1</td><td>docker-elk_logstash</td><td>RUNNING</td><td>NOT CONFIGURED</td></tr><tr><td>docker-elk_elasticsearch_1</td><td>docker-elk_elasticsearch</td><td>RUNNING</td><td>NOT CONFIGURED</td></tr>
+</table>
+
+<p>Docker available: True</p>
+
+<h2>URL Checks</h2>
+
+<table>
+<tr><th>Name</th><th>URL</th><th>Status</th><th>HTTP Code</th></tr>
+<tr><td>Application</td><td>Unavailable</td><td>UP</td><td>200</td></tr><tr><td>Jenkins</td><td>http://localhost:8080/login</td><td>UP</td><td>200</td></tr><tr><td>Nginx</td><td>http://localhost/</td><td>UP</td><td>200</td></tr>
+</table>
+
+<h2>Problems</h2>
+
+<ul>
+<li>High memory usage: 26.07%</li><li>High disk usage: 1.27%</li><li>Docker container docker-elk_kibana_1 health is NOT CONFIGURED</li><li>Docker container docker-elk_logstash_1 health is NOT CONFIGURED</li><li>Docker container docker-elk_elasticsearch_1 health is NOT CONFIGURED</li>
+
+</ul>
+
+</body>
+
+</html>
